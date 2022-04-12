@@ -15,9 +15,8 @@ const { NotImplementedError } = require('../extensions/index.js');
  */
 
 function createDreamTeam(team) {
-  if(!team){return false}
-  if(!Array.isArray(team)){return false}
-  return team.map(name => {
+  // if(!Array.isArray(team)){return false}
+  return Array.isArray(team) && team.map(name => {
     if (typeof (name) === 'string') {
       return name.replace(/\s+/, '')[0].toUpperCase()
     } else {
