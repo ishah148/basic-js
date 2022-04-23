@@ -6,7 +6,7 @@ it.optional = testOptional;
 
 Object.freeze(expect);
 Object.freeze(assert);
-
+ 
 describe('Hanoi tower', () => {
     //Presence requirement
     describe('variable presence', () => {
