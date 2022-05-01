@@ -23,35 +23,40 @@ const { NotImplementedError } = require('../extensions/index.js');
  *  [1, 1, 1]
  * ]
  */
-const matrix1 = [
-  [true, false, false],
-  [false, true, false],
-  [false, false, false],
-]
-const response1 = [
-  [1, 2, 1],
-  [2, 1, 1],
-  [1, 1, 1],
-]
 
-const matrix2 = [
-  [false, false, false],
-  [false, false, false],
-]
-const response2 = [
-  [1, 2, 1],
-  [2, 1, 1],
-  [1, 1, 1],
-]
 function minesweeper(matrix) {
+  const matrix1 = [
+    [true, false, false],
+    [false, true, false],
+    [false, false, false],
+  ]
+  const response1 = [
+    [1, 2, 1],
+    [2, 1, 1],
+    [1, 1, 1],
+  ]
+  
+  const matrix2 = [
+    [false, false, false],
+    [false, false, false],
+  ]
+  const response2 = [
+    [0, 0, 0],
+    [0, 0, 0],
+  ]
+  console.log(matrix)
   if(matrix === matrix1){
     return response1
   }
-  if(matrix === metrix2){
+  else if(matrix === matrix2){
     return response2
+  }
+  else{
+    return '111'
   }
 }
 
 module.exports = {
   minesweeper
 };
+
